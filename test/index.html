@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <title>areYouSure? - jquery confirmation plugin</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="main">
+    <div class="hero-unit">
+      <h1>Are you sure?</h1>
+      <p>jQuery confirmation plugin</p>
+    </div>
+
+    <h2>Sample</h2>
+    <p>
+      <a href="http://goo.gl/AsqUv" data-message="Are you sure?" data-active="active" id="button" class="confirm btn btn-primary">Download this plugin</a>
+    </p>
+
+    <hr>
+
+    <h2>Usage</h2>
+
+    <h3>#1</h3>
+    <pre>&lt;a href="#" class="confirm"&gt;Delete&lt;/a&gt;</pre>
+    <pre>$('.confirm').areYouSure({message: 'Really ?!'});</pre>
+    <p>In this sample we've definied default message that will be displayed as confirmation.</p>
+
+    <h3>#2</h3>
+    <pre>&lt;a href="#" data-message="Are you sure?" class="confirm"&gt;Delete&lt;/a&gt;</pre>
+    <pre>$('.confirm').areYouSure({message: 'This message will not be displayed'});</pre>
+    <p>Here we've overrided 'This message will not be displayed' with 'Are you sure?'.</p>
+
+    <h3>#3</h3>
+    <pre>&lt;a href="#" data-active="active" class="confirm"&gt;Delete&lt;/a&gt;</pre>
+    <pre>$('.confirm').areYouSure();</pre>
+    <p>On click "active" class will be added to link.</p>
+    <p>This is also possible:</p>
+    <pre>$('.confirm').areYouSure({active: 'active'});</pre>
+
+    <hr>
+
+    <h2>Options</h2>
+    <table class="table table-bordered table-stripped">
+      <thead>
+        <tr>
+          <th>Option</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="label label-warning">data-message</span> <span class="label label-success">message</span></td>
+          <td>Message that will be displayed as confirmation.</td>
+        </tr>
+        <tr>
+          <td><span class="label label-warning">data-active</span> <span class="label label-success">active</span></td>
+          <td>Class that will be added on first click.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span class="label label-warning">html inline</span> <span class="label label-success">js</span></p>
+
+    <hr>
+
+    <h2>License</h2>
+    <p>Copyright 2012, <a href="https://twitter.com/idered" title="Follow me on Twitter">@Idered</a><br>
+    Released under MIT license.</p>
+
+    <hr>
+
+    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html" style="width:96px; height:20px;"></iframe>
+
+  </div>
+
+  <script src="jquery.js"></script>
+  <script src="../jQuery.areYouSure.js"></script>
+  <script>$('.confirm').areYouSure();</script>
+</body>
+</html>
