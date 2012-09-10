@@ -11,7 +11,7 @@
     $.fn.areYouSure = function(settings) {
 
         var defaultSettings = {
-            message : 'Are you sure?', // messge displayed as confirmation
+            message : 'Are you sure?', // message displayed as confirmation
             active  : '' // class added for active button
         };
 
